@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gelasio&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faustina:wght@300&display=swap');
+* {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+html, body {
+  margin: 0;
+  height: 100%;
+}
+.navbar {
+    background-color: #ffffff;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    margin-top: -3px ;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    height: 53px;
+}
+#navbar {
+   background-color: #ffffff;
+   z-index: 2;
+   width: 100%;
+   display: flex;
+   margin-top: -3px ;
+   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+   justify-content: flex-end;
+   position: fixed;
+   top: 0;
+   align-items: center;
+   text-overflow: ellipsis;
+   box-sizing: border-box;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+   height: 53px;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.close-nav {
+    display: none;
+    font-size: 20px;
+    width: 100px;
+    color: #585656;
+    border: none;
+    background-color: transparent;
+    margin-left: 70% ;
+    cursor: pointer;
+}
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0 ;
+    padding: 0;
+}
+.nav-item {
+    margin-right: 10px ;
+}
+.nav-link {
+    font-size: 15px;
+    color: #585656;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.nav-link:hover {
+    color: black;
+}
+.menu-icon {
+    display: none;
+}
+
+
+@media only screen and (min-width:1100px) {
+
+#parent4-parent {
+  margin-top:200px;
+}
+}
+
+
+
+@media only screen and (max-width: 1500px) {
+  .main-text {
+    color: #725E59;
+    font-size: 1.4vw !important;
+    font-family: 'Rajdhani', sans-serif;
+    margin-top: 10px;
+}
+  .parent3 {
+    width: 63%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 200px !important;
+}
+.bordered-text {
+  line-height: 20px !important;
+  font-family: 'Rajdhani', sans-serif;
+  padding-top: 16px;
+  color: #725E59;
+  letter-spacing: 2px !important;
+  font-weight: 600;
+  font-size: 1.5vw;
+}
+.right-child p {
+  letter-spacing: 1px !important;
+  color: rgb(115,94,89);
+  font-family: 'Gelasio', serif;
+  font-weight: 500;
+  line-height: 36px !important; 
+  font-size: 2.5vw;
+  margin: 0;
+}
+}
+@media only screen and (max-width: 1100px) {
+
+    .navbar {
+        justify-content: space-between;
+        padding-left: 10px;
+   }
+    .close-nav {
+      width: 70px;
+      font-size: 70px;
+        display: block;
+   }
+    .bio-right > p {
+      font-size: 17px;
+   }
+    .navbar-nav {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        border: 12px solid #ffffff;
+        margin: 0 0 0 auto ;
+        z-index: 3;
+        font-size: 1.5rem;
+        right: -100%;
+        width: 60%;
+        height: 100%;
+        background-color: #ffffff;
+        z-index: 3;
+        padding: 20px;
+        transition: right 0.36s ease-in;
+       /* Updated transition */
+   }
+    ul {
+        list-style-type: none;
+   }
+    .sj {
+        list-style: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        border: 12px solid #ffffff;
+        margin: 0 0 0 auto ;
+        z-index: 3;
+        font-size: 1.5rem;
+        right: -100%;
+        width: 400px;
+        height: 100%;
+        background-color: #ffffff;
+        z-index: 3;
+        padding: 20px;
+        transition: right 0.30s ease-in;
+   }
+    .nav-item {
+        margin-bottom: 70px ;
+        margin-right: 0 ;
+   }
+    .nav-link {
+        font-size:32px;
+        color:rgb(115,94,89);
+
+   }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        margin-left:20px ;
+   }
+    .navbar.show-nav .navbar-nav {
+        display: flex;
+        right: 0;
+   }
+}
+.parent {
+    width: 63%;
+    margin: 0 auto;
+  }
+
+  .parent2 {
+    width: 63%;
+    margin: 0 auto;
+  }
+
+  .title > h4 {
+    font-weight: 500;
+    font-family: 'Playfair', serif;
+    color:rgb(115,94,89);
+    font-size: 40px;
+    letter-spacing: -2px;
+  }
+  .title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -50px;
+  }
+
+  .title > img {
+
+    padding-bottom:50px;
+    width: 260px;
+  }
+
+  .title2 > h1 {
+    font-weight: 500;
+    margin-bottom: -0px;
+    letter-spacing: -2px;
+    font-family: 'Roboto Condensed', sans-serif;
+
+        color:rgb(115,94,89);
+    font-size: 67px;
+  }
+
+  .line {
+    border: none;
+    border-top: 1px solid black;
+    margin-top: 0px;
+  }
+
+  .children {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .left-child {
+    width: 77%;
+  }
+
+  .right-child {
+    justify-content: center;
+ 
+    width: 60%;
+  }
+
+  .right-child p {
+    letter-spacing: 3px;
+    color:rgb(115,94,89);
+    font-family: 'Gelasio', serif;
+font-weight:500;
+line-height: 55px;
+    font-size: 2.5vw;
+    margin: 0;
+  }
+
+  .bordered-text {
+    line-height: 32px;
+    font-family: 'Rajdhani', sans-serif;
+    padding-top: 16px;
+    color: #725E59;
+    letter-spacing: 3.2px;
+    font-weight: 600;
+    font-size: 1.1vw;
+}
+
+
+.main-text {
+  color: #725E59;
+  font-size: 0.92vw;
+  font-family: 'Rajdhani', sans-serif;
+  margin-top: 10px;
+}
+
+#products {
+  display: flex;
+  column-gap: 1%;
+  margin-right:100px;
+  justify-content: center;
+  margin-top: 115px;
+}
+#description {
+  display: flex;
+  flex-direction: column;
+}
+.desc-title {
+  font-size: 25px;
+  font-weight: 700;
+  min-height: 4%;
+  color: #363030;
+  width: 100%;
+}
+.desc-text {
+  font-family: 'Raleway', sans-serif;
+  font-size:20px;
+  font-weight: 600;
+  color: #706767;
+  letter-spacing: 1.3px;
+  height: 200px;
+  width: 90%;
+  margin-top:-10px;
+  text-align: left;
+}
+.product {
+  margin-left:33px;
+  width: 32%;
+}
+.products-img {
+  width: 100%;
+}
+.parent3 {
+  width: 63%;
+  margin: 0 auto;
+}
+
+.title3 {
+  height: 30%;
+}
+
+#footer-container {
+  height: 70%;
+}
+
+.title3 > h3, h1 {
+  font-weight: 500;
+  margin-bottom: -0px;
+  letter-spacing: -2px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color:rgb(115,94,89);
+  font-size: 4vw;
+}
+#bio-container {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+  column-gap: 41px;
+}
+.bio-right {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  color: #706767;
+    font-size: 21px;
+  line-height: 30px;
+  width: 100%;
+  height: auto;
+}
+.bio-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: auto;
+  padding-top: 25px;
+}
+.parent4 {
+  width: 63%;
+  background-color: #eceada;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+#parent4-parent {
+  background-color: #eceada;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-container {
+  display: flex;
+  column-gap: 50px;
+  margin-top: 24px;
+}
+.footer-left {
+  width: auto;
+}
+.footer-right {
+  width: auto;
+  font-weight: 700;
+}
+
+.mail {
+
+  font-size: 23px;
+  color: #494747;
+}
+
+.icons > a {
+margin-left:15px;
+}
+
+.icons {
+  margin-left:-15px;
+}
+
+.bio-left > h4 {
+  margin-bottom: 0px; font-family: 'Roboto', sans-serif; font-size: 24px; font-weight: 700; color:#706767;
+}
+
+
+/* Add this CSS to your existing stylesheet or create a new one */
+@media (max-width: 1100px) {
+.menu-icon {
+  font-size: 32px;
+}
+
+.children {
+  justify-content: unset !important ;
+  flex-direction: column;
+}
+
+.parent {
+  width: 77%;
+}
+.left-child {
+  height: 70%;
+  width: unset !important;
+}
+
+.right-child > p {
+  padding-top: 20px;
+  font-size: 37px;
+}
+.right-child {
+  width: unset !important;
+}
+
+.bordered-text {
+  font-size: 22px;
+  line-height: 25px !important; 
+}
+.main-text {
+  font-size: 23px !important;
+}
+.title2 > h1 {
+  font-weight: 500;
+  margin-bottom: 0px;
+  letter-spacing: -2px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: rgb(115,94,89);
+  font-size: 53px !important;
+}
+#products {
+  flex-direction: column;
+  margin-top: 1px;
+}
+.parent2 {
+  width: 83% !important;
+  margin: 0 auto;
+}
+.product {
+  padding-top: 40px;
+  width: 100% !important;
+}
+.title2 > h1 {
+  font-size: 49px !important;
+  padding-bottom: 18px;
+}
+.parent3 {
+  width: 63%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 81px !important;
+}
+.title3 > h3, h1 {
+  font-weight: 500;
+  margin-bottom: 0px;
+  letter-spacing: -2px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: rgb(115,94,89);
+  font-size: 55px !important;
+}
+
+#bio-container {
+  flex-direction: column;
+}
+
+
+.parent3 {
+    width:74% !important;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 81px !important;
+}
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 547px !important;
+}
+#footer-container {
+  display: flex;
+  column-gap: 50px;
+  margin-top: 24px;
+  flex-direction: column;
+}
+#footer-pic {
+  padding-top: 20px;
+  width: 100% !important;
+}
+
+.footer-right {
+  width: auto;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.fot-p {
+  font-size: 28px !important;
+  color:#725E59;
+}
+.emal {
+  color: rgb(12, 125, 160) !important;
+    font-size: 28px;
+}
+}
